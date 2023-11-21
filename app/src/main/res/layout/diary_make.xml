@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:scaleType="fitCenter"
+            />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="画像を選択"
+            android:onClick="onSelectImageClick" />
+
+        <!--必須テキスト-->
+
+        <!-- 身長 -->
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:textColor="#ff0000"
+            android:text="*必須" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="*身長"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="身長 (cm)" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="cm"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!--体重-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="*体重" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="体重 (kg)" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kg"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!--消費カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="*消費カロリー"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/inKrlEditText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="カロリー (kcal)" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <!--摂取カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="*摂取カロリー" />
+
+            <EditText
+                android:id="@+id/outKrlEditText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:hint="カロリー (kcal)" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!--食事履歴-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="食事履歴"
+            android:textSize="16dp" />
+
+        <!--朝食-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="朝食"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/breakfastBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="セットする" />
+
+        <!--昼食-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:text="昼食" />
+
+        <Button
+            android:id="@+id/lunchBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="セットする" />
+
+        <!--夕食-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:text="夕食" />
+
+        <Button
+            android:id="@+id/dinnerBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="セットする" />
+
+        <!--トレーニング履歴-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="トレーニング履歴"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/workoutBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="セットする" />
+
+        <!--コメント-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="コメント"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:maxLength="140"
+            android:hint="コメントする" />
+
+
+        <!--画面遷移-->
+        <Button
+            android:id="@+id/addDBButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@id/calendarView"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#40a798"
+            android:text="確定" />
+
+    </LinearLayout>
+</ScrollView>

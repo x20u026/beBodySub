@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="目標体重" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="実施期間" />
+
+            <TextView
+                android:id="@+id/spnTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="か月"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!--摂取カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="減量体重\n(１か月)" />
+
+            <TextView
+                android:id="@+id/delWeightTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kg"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="運動日" />
+
+        <!--消費カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="消費カロリー"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/workInKrlTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <!--摂取カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="摂取カロリー" />
+
+            <TextView
+                android:id="@+id/workOutKrlTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="休息日" />
+
+        <!--消費カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="消費カロリー"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/restInKrlTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <!--摂取カロリー-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:text="摂取カロリー" />
+
+            <TextView
+                android:id="@+id/restOutKrlTextView"
+                android:layout_width="100dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="kcal"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!--画面遷移-->
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#40a798"
+            android:text="確定" />
+
+    </LinearLayout>
+</ScrollView>
